@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Nutshell</title>
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Nutshell</a>
+      </div>
+      <ul class="nav navbar-nav hide">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Friends
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li id="addFriendsBtn"><a href="#">Add Friends</a></li>
+            <li>
+              <input class="sectionName hide", id="searchFriend" type="text", name="searchFriend">
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">News
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li id="addNewsBtn"><a href="#">Add News Article</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li id="addEventBtn"><a href="#">Add Event</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tasks
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li id="addTaskBtn"><a href="#">Add Task</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="logout" class="nav navbar-nav navbar-right">
+        <li class="nav navbar-nav navbar-right">
+          <a id="logout_btn" class="dropdown-toggle hide" data-toggle="dropdown" href="#">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="welcome">
+    <article id="article">
+      <div id="loginDiv">
+        <h1 id="mainHeader">Welcome to Nutshell</h1>
+        <fieldset id="loginField">
+          <section id="email" class="sectionName hide">
+            <label for="emailInput">Email Address</label>
+            <input id="emailInput" class="input" type="text">
+          </section>
+          <section class="sectionName">
+            <label for="usernameInput">Username</label>
+            <input id="usernameInput" class="input" type="text">
+          </section>
+          <section id="confirmUsername" class="sectionName hide">
+            <label for="confirmUsernameInput">Confirm Username</label>
+            <input id="confirmUsernameInput" class="input" type="text">
+          </section>
+          <section class="sectionName">
+            <label for="passwordInput">Password</label>
+            <input id="passwordInput" class="input" type="password" min="6">
+          </section>
+          <section id="confirmPass" class="sectionName hide">
+            <label for="confirmPasswordInput">Confirm Password</label>
+            <input id="confirmPasswordInput" class="input" type="password" min="6">
+          </section>
+          <section class="sectionBtn">
+            <button id="login_btn" class="loginBtn">Login</button>
+            <button id="registrationBtn" class="loginBtn">New User?</button>
+          </section>
+        </fieldset>
+      </div>
+    </article>
+  </div>
+
+  <div id="justifyDiv" class="hide">
+
+    <section id="friendsContainer">
+      <h1>Your Friends</h1>
+      <div id="friendsCardContainer">
+      </div>
+    </section>
+
+    <section id="mainContainer">
+      <article id="chatContainer">
+        <div id="chatDisplayDiv"></div>
+        <div id="chatInputDiv">
+          <input id="statusInput" placeholder="  Post your new message" type="text">
+          <button id="submitChatMessage">Submit</button>
+        </div>
+      </article>
+
+      <section>
+        <div id="eventsContainer">
+          <h1>Your Events</h1>
+          <div id="eventsCards"></div>
+        </div>
+
+        <div id="tasksContainer">
+          <h1 id="tasksHead">Your Tasks</h1>
+
+          <div id="taskForm" class="hide">
+            <h1>New Task</h1>
+            <center><label>Task:</label></center>
+            <center><input id="taskInputBox"></input></center>
+            <center><label>Completion Date:</label></center>
+            <center><input id="datebutton" type="date"></input></center>
+            <center><button id="taskEntry" type="submit">Add</button></center>
+            <h1>Task List</h1>
+            <div id="taskDataBase"></div>
+            <!-- <input type="checkbox"></input> -->
+          </div>
+          <div id="tasksCards"></div>
+
+        </div>
+  </div>
+  </section>
+
+  </section>
+  </div>
+  <div>
+    <footer id="footer">
+      <a href="https://github.com/nss-day-cohort-32/BrowserFighters">
+        <i id="gitLink" class="fab fa-github fa-2x"></i>
+      </a>
+    </footer>
+  </div>
+
+  <script src="./bundle.js"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
+</body>
+
+</html>

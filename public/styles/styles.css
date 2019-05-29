@@ -1,0 +1,308 @@
+body {
+    background-color: steelblue;
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+}
+
+.hide {
+    display: none;
+}
+#justifyDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.message_card {
+    border: 1px green solid;
+    border-radius: 20px;
+    background-color: lightgreen;
+    padding: 8px;
+    margin: 10px;
+}
+
+#mainContainer {
+    margin-right: 0px;
+    margin-top: 10px;
+    display: flex;
+    height: 740px;
+}
+
+#chatContainer {
+    border: 1px solid black;
+    font-size: 2rem;
+    background-color: grey;
+    width: 900px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+#chatInputDiv {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+#chatDisplayDiv {
+    height: 94%;
+    overflow: scroll;
+    padding-bottom: 50px;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+#statusInput {
+    width: 100%;
+}
+
+#mainHeader {
+    color: goldenrod;
+    text-align: center;
+    text-decoration: underline goldenrod;
+    text-shadow: 3px 3px 3px black;
+    margin-bottom: 40px;
+}
+
+#loginDiv {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px 20px;
+}
+
+#loginField {
+    justify-content: space-around;
+    width:100%;
+}
+
+.sectionName {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 10px;
+}
+
+.sectionBtn {
+    display: flex;
+    margin-top: 10px;
+}
+
+.input {
+    margin: 10px 0px;
+    width: 90%;
+}
+
+.loginBtn {
+    width: 40%;
+    border: 1px solid goldenrod;
+    margin: 8px 8px;
+}
+
+.loginBtn:hover {
+    box-shadow: 1px 1px 1px black;
+}
+
+#loginDiv {
+    display: flex;
+    justify-content: center;
+}
+  
+#footer {
+    height: 50px;
+    background-color: #222222;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    position: absolutefi;
+    bottom: 0;
+}
+
+#article {
+    display: flex;
+    justify-content: center;
+    border: goldenrod 2px solid;
+    width: 700px;
+    background: lightslategray;
+    border-radius: 90px;
+    box-shadow: 4px 4px 4px 4px black;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
+}
+
+#gitLink {
+    color: white;
+    margin-top: 8px;
+}
+#gitLink:hover {
+    color: goldenrod;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+#tasksContainer {
+    border: 1px solid black;
+}
+
+#chatContainer {
+    border: 1px solid black;
+}
+
+#eventsContainer {
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+    border: black 1px solid;
+    background-color: #222222;
+    overflow: scroll;
+}
+
+#eventsContainer h1 {
+    color: steelblue;
+    text-align: center;
+    text-decoration: underline steelblue;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 20px;
+}
+
+#tasksContainer {
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+    border: black 1px solid;
+    background-color: #222222;
+    overflow: scroll;
+    margin-top: 6px;
+}
+#tasksContainer h1 {
+    color: steelblue;
+    text-align: center;
+    text-decoration: underline steelblue;
+    text-shadow: 1px 1px 1px black;
+    /* margin-bottom: 20px; */          /*fix for floating footer on JM Tasks */
+}
+
+#currentUserContainer{
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#friendsContainer {
+    border: 1px solid black;
+    width: 300px;
+    height: 805px;
+    margin-top: 10px;
+    margin-right: 20px;
+    background-color: #222222;
+} 
+
+.allTasks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border:3px solid black;
+    background-color: goldenrod
+}
+
+#friendsContainer h1 {
+    color: steelblue;
+    text-align: center;
+    text-decoration: underline steelblue;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 20px;
+}
+
+#eventForm {
+    display: flex;
+    border: black 1px solid;
+}
+
+.addEventFormInput {
+    margin-top: 10px;
+    margin-left: 2px;
+    width: 90%;
+    border: 1px black solid;
+}
+
+#addEventButton {
+    margin-top: 10px;
+    margin-left: 2px;
+    border: 1px black solid;
+}
+
+.event_card {
+    border: 1px black solid;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: goldenrod;
+    height: 320px;
+}
+
+.delete_btn {
+    border: black 1px solid;
+    margin-left: 5px;
+    margin-top: 40px;
+    color: red;
+}
+.edit_btn {
+    border: black 1px solid;
+    margin-top: 40px;
+    color: steelblue;
+}
+
+#tasksHead {
+    text-align: center;
+    text-decoration: underline black;
+}
+
+#submitChatMessage {
+    background-color: goldenrod;
+}
+#submitChatMessage:hover {
+    background-color: lightgreen;
+}
+
+#taskForm {
+    background-color: goldenrod
+
+}
+#taskEdit_button {                 /* jm task */      
+    border: black 1px solid;
+    margin-top: 40px;
+    color: steelblue;
+}
+
+
+.friend_Card {
+color: lightgreen;
+}
+
+#potentialFriend {
+    color: lightgreen;
+}
+.chat_name {
+    text-decoration: underline black;
+    font-size: 2.4rem;
+    color: navy;
+}
+
+#logout {
+    padding-right: 20px;
+}
+
+#chatEdit {
+    margin-right: 10px;
+    color: steelblue;
+    border: 1px solid steelblue;
+}
+
+#chatDelete {
+    color: red;
+    border: 1px solid red;
+}
